@@ -7,8 +7,6 @@ RUN sed -i '19s/#port/port/'  /etc/mysql/mariadb.conf.d/50-server.cnf
 
 COPY ./tools/script.sh /
 
-# RUN service mysql start
-
 RUN chmod 777 /script.sh
 
 CMD ["/script.sh"]
